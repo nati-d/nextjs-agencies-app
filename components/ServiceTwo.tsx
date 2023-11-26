@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, MutableRefObject } from "react";
 import Image from "next/image";
 import Slider from "react-slick";
 import { CompaniesLogo } from "@/constants";
@@ -7,8 +7,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 const ServiceTwo = () => {
-  const sliderRef = useRef();
-
+  const sliderRef: MutableRefObject<Slider | null> = useRef(null);
   const sliderSettings = {
     slidesToShow: 5,
     slidesToScroll: 1,
@@ -22,13 +21,14 @@ const ServiceTwo = () => {
       },
     ],
   };
+  
 
   const handleNext = () => {
-    sliderRef.current.slickNext();
+    sliderRef.current!.slickNext();
   };
-
+  
   const handlePrev = () => {
-    sliderRef.current.slickPrev();
+    sliderRef.current!.slickPrev();
   };
 
   return (
