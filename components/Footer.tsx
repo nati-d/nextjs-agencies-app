@@ -34,7 +34,7 @@ const Footer = () => {
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry.{" "}
           </p>
-          <span>+923183561921</span>
+          <span>+251 977374409</span>
         </div>
         <div className="p-2 flex gap-6 lg:justify-end ">
           <div className="p-3 shadow-lg border rounded-full">
