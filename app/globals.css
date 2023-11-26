@@ -1,27 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Poppins:wght@300;400;500;600;700;900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Poppins', sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.gradient{
+  background: linear-gradient(45deg, hsla(274, 77%, 32%, 1) 0%, hsla(240, 73%, 65%, 1) 100%);
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.font-cursive {
+  font-family: 'Caveat', cursive;
+}
+.purple{
+  color: #59138F;
+}
+.blue{
+  background-color: #3D63EA;
+}
+.gray{
+  background-color: #ece8e8;
+}
+.swiper {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 10px;
+}
+.mySwiper{
+  padding-left: 20px;
+}
+.mySwiper .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background-color: #ccc; 
+  opacity: 1; 
+  margin: 15px 5px; 
+}
+
+.mySwiper .swiper-pagination-bullet-active {
+  background: linear-gradient(45deg, hsla(274, 77%, 32%, 1) 0%, hsla(240, 73%, 65%, 1) 100%);
+}
+
+.swiper-slide{
+  margin-bottom: 80px;
+}
+.logoSwiper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 90px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+hr{
+  background: linear-gradient(45deg, hsla(274, 77%, 32%, 1) 0%, hsla(240, 73%, 65%, 1) 100%);
+  width:90px;
+  height:5px;
+  border-radius: 10px;
+}
+
+.light-blue{
+  background-color: #F1F2FF;
+}
+.light-green{
+  background-color: #F0FFF7;
+}
+.light-red{
+  background-color: #FFF4F4;
+}
+.orange{
+  background: linear-gradient(45deg, #FFC656, #F16063);
 }
